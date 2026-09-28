@@ -1,0 +1,32 @@
+CODEALPHA MACHINE LEARNING INTERNSHIP
+TASK 1 — CREDIT SCORING MODEL
+
+1. Objective
+The objective of this project is to build a machine learning classification system that predicts credit risk from historical credit-application information.
+
+2. Dataset
+The project uses the UCI Statlog (German Credit Data) dataset. It contains financial/application attributes such as checking account status, credit history, credit amount, savings status, employment information, age, housing and existing credits.
+
+3. Technologies Used
+Python, Pandas, NumPy, Scikit-learn and Matplotlib.
+
+4. Data Preprocessing
+• The target variable is converted into binary form: 1 = good credit and 0 = bad credit.
+• Numerical and categorical columns are identified separately.
+• Numerical missing values are handled with the median.
+• Categorical missing values are handled with the most frequent value.
+• Numerical features are standardized.
+• Categorical features are converted using one-hot encoding.
+• The data is divided into 80% training and 20% testing data using stratification.
+
+5. Models
+Logistic Regression and Random Forest Classifier are trained and compared.
+
+6. Evaluation
+The models are evaluated using Accuracy, Precision, Recall, F1-score, ROC-AUC and confusion matrices. The generated model_results.csv contains the exact results obtained when the code is executed.
+
+7. Result
+The model comparison allows the two classifiers to be evaluated on the same held-out test set. The confusion matrices provide a visual summary of correct and incorrect predictions.
+
+8. Conclusion
+This project demonstrates a complete supervised machine-learning workflow: data acquisition, preprocessing, feature encoding, model training, evaluation and result comparison. It can be extended with hyperparameter tuning, probability calibration, explainable AI and stronger fairness/validation checks before any real-world financial use.
